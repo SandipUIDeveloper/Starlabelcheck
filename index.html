@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<header class="header-top bg-white fixed-top shadow-sm">
+    <nav class="header-top-nav d-flex justify-content-between pe-4">
+        <div class="navbar-left ps-4 d-flex align-items-center">
+            <a href="index.html" title="Logo" class="logo"><img src="img/logo.png" alt="iNVENCO" /></a>
+            <a href="javascript:void(0)" title="Logo" class="sidebar-toggle p-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </a>
+        </div>
+        <div class="navbar-right d-flex align-items-center">
+            <ul>
+                <li class="nav-author">
+                    <div class="custom-author dropdown">
+                        <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admin
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><button class="dropdown-item" type="button" onclick="window.location.href='login.html';">Sign Out</button></li>
+                        </ul>
+                      </div>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="main">
+    <aside class="sidebar-wrapper" >
+        <div class="sidebar">
+            <div class="sidebar-menu-group">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-nav-item">
+                        <a href="index.html" title="">Dashboard</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a href="report.html" title="">Report</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a href="user.html" title="">User</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <div class="contents-body">
+        <div class="contents-inner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="breadcrumb-main">
+                            <h4 class="text-capitalize breadcrumb-title">Dashboard</h4>
+                            <div class="breadcrumb-action justify-content-center flex-wrap">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                      <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 dashboard-card-wraper mb-5">
+                     <div class="row">
+                        <div class="col-md-4">
+                            <div class="card dashboard-card reporst-card">
+                                <div class="card-body rounded-5">
+                                    <div class="d-flex justify-content-between">
+                                    <h3 class="dashboard-card-count">8</h3>
+                                    <span class="dashboard-card-icon bg-dark rounded-circle text-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M448 80l0 48c0 44.2-100.3 80-224 80S0 172.2 0 128L0 80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6L448 288c0 44.2-100.3 80-224 80S0 332.2 0 288L0 186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6l0 85.9c0 44.2-100.3 80-224 80S0 476.2 0 432l0-85.9z"/></svg></span>
+                                    </div>
+                                    <p class="card-text text-dark fw-bold">Reports</p>
+                                    <a href="report.html" class="btn btn-dark btn-sm">View</a>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card dashboard-card user-card">
+                            <div class="card-body rounded-5">
+                                <div class="d-flex justify-content-between">
+                                <h3 class="dashboard-card-count">8</h3>
+                                <span class="dashboard-card-icon bg-dark rounded-circle text-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></svg></span>
+                                </div>
+                                <p class="card-text text-dark fw-bold">Users</p>
+                                <a href="user.html" class="btn btn-dark btn-sm">View</a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-md-12 g-map-wrap-dahboard mb-5">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.35231224149!2d88.26495212466811!3d22.535406375105254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1737459523232!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                     </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-wrapper">
+        <div class="footer-wrapper-inside">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-copyright">
+                            <p><span>@Copyright 2025</span> <a href="#" class="ms-2">iNVENCO</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/bootstrap.bundle.js"></script>
+<script>
+
+</script>
+</body>
+
+</html>
